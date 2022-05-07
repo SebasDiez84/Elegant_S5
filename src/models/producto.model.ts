@@ -1,4 +1,5 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, belongsTo} from '@loopback/repository';
+import {ProductoInventario} from './producto-inventario.model';
 
 @model()
 export class Producto extends Entity {
@@ -33,10 +34,8 @@ export class Producto extends Entity {
   })
   valorVenta: number;
 
-
-  constructor(data?: Partial<Producto>) {
-    super(data);
-  }
+  @belongsTo(() => ProductoInventario, {name: 'ProdutoProductoInventario'})
+  productoInventarioId: string;
 }
 
 export interface ProductoRelations {

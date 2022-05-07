@@ -1,4 +1,6 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, hasMany, hasOne} from '@loopback/repository';
+import {Producto} from './producto.model';
+import {Inventario} from './inventario.model';
 
 @model()
 export class ProductoInventario extends Entity {
@@ -16,10 +18,11 @@ export class ProductoInventario extends Entity {
   })
   cantidad: number;
 
+  @hasMany(() => Producto)
+  ProductoInventarioProducto: Producto[];
 
-  constructor(data?: Partial<ProductoInventario>) {
-    super(data);
-  }
+  @hasOne(() => Inventario)
+  ProductoInventarioInventario: Inventario;
 }
 
 export interface ProductoInventarioRelations {
