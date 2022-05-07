@@ -7,3 +7,8 @@ export * from './producto-inventario-inventario.controller';
 export * from './inventario-producto-inventario.controller';
 export * from './inventario-sucursal.controller';
 export * from './sucursal-inventario.controller';
+export * from './sucursal.controller';
+export * from './empleado.controller';
+export * from './inventario.controller';
+export * from './producto-inventario.controller';
+export * from './producto.controller';
