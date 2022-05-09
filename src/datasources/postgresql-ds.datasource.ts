@@ -7,9 +7,9 @@ const config = {
   url: '',
   host: 'localhost',
   port: 5432,
-  user: '',
-  password: '',
-  database: 'elegantDB'
+  user: 'postgres', //Usuario BD personal
+  password: 'codigo99', //Contraseña BD personal
+  database: 'elegant'
 };
 
 // Observe application's life cycle to disconnect the datasource when
