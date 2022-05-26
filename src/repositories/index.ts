@@ -3,3 +3,4 @@ export * from './inventario.repository';
 export * from './producto-inventario.repository';
 export * from './producto.repository';
 export * from './sucursal.repository';
+export * from './disennos.repository';

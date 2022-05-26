@@ -12,3 +12,5 @@ export * from './empleado.controller';
 export * from './inventario.controller';
 export * from './producto-inventario.controller';
 export * from './producto.controller';
+export * from './producto-disennos.controller';
+export * from './disenno.controller';
